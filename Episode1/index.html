@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- This will be replaced with what is passed
+      to the render fxn -->
+      <!-- This is first rendered then browser will load
+      React, ReactDOM, App.js
+      once react is there, it takes control of this div -->
+      <h1>This will get replaced</h1>
+    </div>
+
+    <div>
+      <h1>This will not get replaced</h1>
+      <p>We can place rest of our project here which doesn't use React</p>
+    </div>
+  </body>
+
+  <!-- Order of files matter a lot -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script src="./App.js"></script>
+</html>
+
+<!-- 
+  React is a library and not a framework
+  since we don't need to utilize it in entire project
+  we can just use it in Header and not anywhere
+  17 & 20 are example of this.
+
+  This is one of the biggest advantage of react
+  We don't need to create entire app with React
+ -->
