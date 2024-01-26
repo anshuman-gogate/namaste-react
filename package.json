@@ -2,7 +2,6 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is namaste react course",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -18,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/anshuman-gogate/namaste-react/issues"
   },
-  "homepage": "https://github.com/anshuman-gogate/namaste-react#readme"
+  "homepage": "https://github.com/anshuman-gogate/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browsersList": [
+    "last 3 versions"
+  ]
 }

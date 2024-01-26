@@ -24,15 +24,22 @@
   </body>
 
   <!-- Order of files matter a lot -->
-  <script
+  <!-- React via cdn is not preferred way -->
+  <!-- This is an expensive operation -->
+  <!-- Managing dpendencies is easier via npm -->
+  <!-- <script
     crossorigin
     src="https://unpkg.com/react@18/umd/react.development.js"
   ></script>
   <script
     crossorigin
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script>
-  <script src="./App.js"></script>
+  ></script> -->
+
+  <!-- type="module" tells browser its not a
+  normal browser script which does not have import/export,
+  it is a module -->
+  <script type="module" src="./App.js"></script>
 </html>
 
 <!-- 
